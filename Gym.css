@@ -1,0 +1,396 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: rgb(184, 160, 160);
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+body {
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  transition: all 200ms ease;
+}
+.svg-header {
+  width: 40px;
+  height: 80%;
+  transform: rotateX(30deg);
+  scale: 2;
+
+  background-size: contain;
+}
+.logo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 5px;
+  margin-left: 20px;
+
+  align-items: center;
+}
+.logo p {
+  color: white;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+.nightMode {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.nav-list {
+  margin-right: 20px;
+}
+.nav-list ul {
+  display: flex;
+  gap: 30px;
+}
+
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+  transition: color 200ms ease;
+}
+.nav-list a:hover {
+  color: red;
+}
+.right-nav {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.nightMode-responsive {
+  display: none;
+}
+#nav-responsive {
+  display: none;
+}
+
+@media (min-width: 200px) and (max-width: 800px) {
+  /*  */
+  /*  */
+  /*  */
+  /*  */
+  .nightMode-responsive {
+    display: block;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+  #nav-responsive {
+    display: block;
+    cursor: pointer;
+    transition: all 200ms ease;
+  }
+  .nightMode {
+    display: none;
+  }
+  .nav-list {
+    display: none;
+  }
+  .right-nav {
+    margin-right: 20px;
+  }
+  .discribe-and-img {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .withPhoto {
+    gap: 40px;
+    align-items: center;
+  }
+  .services {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .withService {
+    gap: 20px;
+  }
+  .container-2 {
+    flex-direction: column-reverse;
+  }
+  .after {
+    width: 150px;
+  }
+  .before {
+    width: 100px;
+  }
+  .svg {
+    display: none;
+  }
+  .img-form {
+    gap: 40px;
+  }
+  footer {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+#responsive {
+  background-color: red;
+  position: absolute;
+  right: -100px;
+  bottom: 0;
+  height: 87vh;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  border-radius: 15px 15px 0 0;
+  padding-top: 15px;
+  transition: all 200ms ease;
+  position: fixed;
+}
+
+.nav-list-responsive ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.discribe-and-img {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.withPhoto {
+  margin-top: 30px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.withPhoto h2 {
+  letter-spacing: 2px;
+  font-size: 50px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.views {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.view {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.discribe-and-img button,
+.what-stop button {
+  background-color: yellow;
+  border-radius: 20px;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+button:hover {
+  opacity: 0.8;
+}
+button:active {
+  scale: 0.9;
+}
+.services {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+  align-items: center;
+}
+.withService {
+  display: flex;
+  flex-direction: column;
+
+  gap: 30px;
+}
+.withService button {
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 200ms ease;
+  width: fit-content;
+}
+
+.service {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 400px;
+  height: fit-content;
+}
+
+.stories {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+.stories h2 {
+  font-size: 30px;
+}
+
+.svg {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  width: 80%;
+  height: 600px;
+}
+.container-2 {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.before {
+  margin-left: -50px;
+  margin-bottom: -30px;
+}
+.about-person {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.facilities,
+.trainer,
+.what-stop {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  margin-top: 50px;
+}
+.facile {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  gap: 80px;
+  align-items: center;
+  justify-content: center;
+}
+
+.train {
+  display: flex;
+  width: 100%;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.train img {
+  width: 200px;
+  border-radius: 15px;
+}
+span {
+  color: yellow;
+}
+.img-form {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+}
+.form button {
+  width: fit-content;
+  margin-top: 10px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+form input {
+  outline: none;
+  width: 400px;
+  height: 40px;
+  font-size: 15px;
+  padding: 10px;
+  border: black 1px solid;
+  border-radius: 10px;
+}
+.img-form img {
+  width: 600px;
+}
+
+.before-footer {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.before-footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+footer {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  width: 100%;
+  height: 90px;
+}
+footer p {
+  font-size: 20px;
+}
+footer span {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 3px;
+}
+
+.svg-footer {
+  width: 35px;
+  cursor: pointer;
+}
