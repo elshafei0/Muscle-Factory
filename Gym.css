@@ -81,7 +81,7 @@ a {
   display: none;
 }
 
-@media (min-width: 150px) and (max-width: 500px) {
+@media (min-width: 150px) and (max-width: 900px) {
   /*  */
   /*  */
   /*  */
@@ -399,4 +399,5 @@ footer span {
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
+  flex-wrap: wrap;
 }
