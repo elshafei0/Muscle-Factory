@@ -395,3 +395,8 @@ footer span {
   width: 35px;
   cursor: pointer;
 }
+.big-div {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
