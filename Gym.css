@@ -397,7 +397,7 @@ footer span {
 }
 .big-div {
   /* display: flex;
-  flex-direction: column;
-  flex-wrap: wrap; */
   overflow-x: hidden;
+  flex-direction: column;*/
+  flex-wrap: wrap;
 }
