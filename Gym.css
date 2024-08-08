@@ -150,6 +150,9 @@ a {
     flex-direction: column;
     gap: 30px;
   }
+  footer p {
+    margin-bottom: 15px;
+  }
 }
 #responsive {
   background-color: rgb(39, 208, 242);
@@ -394,7 +397,6 @@ footer {
 }
 footer p {
   font-size: 20px;
-  margin-bottom: 15px;
 }
 footer span {
   font-size: 25px;
