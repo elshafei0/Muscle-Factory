@@ -118,6 +118,9 @@ a {
     flex-direction: column;
     gap: 20px;
   }
+  .service {
+    margin-left: 5px;
+  }
   .withService {
     gap: 20px;
   }
@@ -132,6 +135,9 @@ a {
   }
   .svg {
     display: none;
+  }
+  .form {
+    justify-content: center;
   }
   .img-form {
     gap: 40px;
