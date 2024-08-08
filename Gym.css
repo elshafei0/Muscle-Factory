@@ -136,6 +136,9 @@ a {
   .svg {
     display: none;
   }
+  .form {
+    margin-left: 15px;
+  }
 
   .img-form {
     gap: 40px;
