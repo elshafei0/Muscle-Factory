@@ -139,9 +139,7 @@ a {
   .form {
     margin-left: 15px;
   }
-  form input {
-    width: 250px;
-  }
+
   .img-form {
     gap: 40px;
   }
@@ -362,7 +360,7 @@ form {
 }
 form input {
   outline: none;
-  width: 400px;
+  width: 100%;
   height: 40px;
   font-size: 15px;
   padding: 10px;
